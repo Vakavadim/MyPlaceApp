@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--My Places-->
         <scene sceneID="JF6-sG-Z1l">
             <objects>
                 <tableViewController id="Juq-Ge-7yi" customClass="MainTableView" customModule="MyPlaceApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="Juq-Ge-7yi" id="1Ae-hT-JPf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="5Fg-p1-FT4"/>
+                    <navigationItem key="navigationItem" title="My Places" id="5Fg-p1-FT4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mG-L9-wJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +45,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pTH-Jb-fGx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="Juq-Ge-7yi" kind="relationship" relationship="rootViewController" id="Ob9-4m-oGj"/>
